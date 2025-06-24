@@ -120,19 +120,6 @@
     margin-bottom: 1.5rem;
   }
   
-  /* Gallery Section */
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-  }
-  
   /* Contact Section */
   .contact p {
     text-align: center;
@@ -168,6 +155,19 @@
     }
   }
 
+    /* Gallery Section */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
   .glider-contain {
     position: relative;
     margin: 2rem auto;
@@ -179,9 +179,11 @@
   }
   
   .glider img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent stretching */
     border-radius: 6px;
     padding: 0.5rem;
   }
+  
 

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/glider.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/baguettebox.js@1.11.1/dist/baguetteBox.min.css" />
 </head>
 <body>
   <header id="home" class="hero">
@@ -31,11 +32,17 @@
     <section id="gallery" class="section gallery">
         <div class="glider-contain">
           <div class="glider">
-            <!-- Replace these with your real images -->
-            <img src="images/shower-1.jpg" alt="Project 1" />
-            <img src="images/shower-2.jpg" alt="Project 2" />
-            <img src="images/shower-3.jpg" alt="Project 3" />
-            <img src="images/shower-1.jpg" alt="Project 4" />
+            <a href="images/shower-1.jpg"><img src="images/shower-1.jpg" alt="Project 1" /></a>
+            <a href="images/shower-2.jpg"><img src="images/shower-2.jpg" alt="Project 2" /></a>
+            <a href="images/kitchen-1.jpg"><img src="images/kitchen-1.jpg" alt="Project 9" /></a>
+            <a href="images/shower-4.jpg"><img src="images/shower-4.jpg" alt="Project 4" /></a>
+            <a href="images/shower-5.jpg"><img src="images/shower-5.jpg" alt="Project 5" /></a>
+            <a href="images/shower-6.jpg"><img src="images/shower-6.jpg" alt="Project 6" /></a>
+            <a href="images/shower-7.jpg"><img src="images/shower-7.jpg" alt="Project 7" /></a>
+            <a href="images/shower-8.jpg"><img src="images/shower-8.jpg" alt="Project 8" /></a>
+            <a href="images/shower-3.jpg"><img src="images/shower-3.jpg" alt="Project 3" /></a>
+            <a href="images/kitchen-2.jpg"><img src="images/kitchen-2.jpg" alt="Project 10" /></a>
+            <a href="images/kitchen-3.jpg"><img src="images/kitchen-3.jpg" alt="Project 11" /></a>
           </div>
       
           <button class="glider-prev">«</button>
@@ -54,10 +61,16 @@
   </main>
 
   <footer class="footer">
-    <!-- <p>&copy; 2025 CW the Tile Guy. All rights reserved.</p> -->
+    <p>&copy; 2025 CW the Tile Guy. All rights reserved.</p>
   </footer>
 
   <script src="js/glider.min.js"></script>
+  <script src="https://unpkg.com/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      baguetteBox.run('.glider');
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
