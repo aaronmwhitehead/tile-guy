@@ -1,0 +1,187 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif; /* Use a modern web-safe font */
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #444 url('../images/hero.jpg') center/cover no-repeat;
+    color: white;
+    display: flex; /* Use flexbox for two columns */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    height: 65vh; /* Make hero twice as big */
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    width: 90%; /* Adjust width for layout */
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-left {
+    flex: 1; /* Left column takes half the space */
+  }
+  
+  .hero-left h1 {
+    font-size: 3.5rem; /* Large font for business name */
+    margin-bottom: 1rem;
+  }
+
+  .hero-left h2 {
+    font-size: 1.5rem; /* Large font for business name */
+    margin-bottom: 1rem;
+  }
+  
+  
+  .hero-left p {
+    font-size: 1.2rem; /* Smaller font for tagline */
+    margin-bottom: 2rem;
+  }
+  
+  .hero-left .btn {
+    background-color: white;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .hero-right {
+    flex: 1; /* Right column takes half the space */
+  }
+  
+  /* Navigation */
+  .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .navbar li {
+    margin: 0.5rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 2rem 2rem;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Gallery Section */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  /* Contact Section */
+  .contact p {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .glider-contain {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 960px;
+  }
+  
+  .glider {
+    margin: 0 auto;
+  }
+  
+  .glider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    padding: 0.5rem;
+  }
+
